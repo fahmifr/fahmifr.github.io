@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Yash Academy</title>
+    <link rel="shortcut icon" href="img/13.png">
+    <style>
+        * {
+            margin:0;
+            padding: 0;
+            font-family: Fira sans, sans-serif;
+        }
+
+        body {
+            background-color: black;
+        }
+        .header {
+            background-image: url(img/aa.jpg);
+            background-size: cover;
+            padding-bottom: 50px;
+            /* height: 500px; */
+        }
+
+        nav {
+            margin: auto;
+            text-align: center;
+            width: 90%;
+            
+
+        }
+
+        nav img {
+            width: 30px;
+            height: 30px;
+            float: left;
+        }
+
+        nav ul {
+            padding: 0 20px;
+            list-style: none;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        nav ul li {
+            float: right;
+
+        }
+
+        nav .tombolmaning {
+            float: right;
+            margin-top: 40px;
+
+        }
+
+        nav .icon {
+            margin-top: 40px;
+            float: left;
+        }
+
+        nav .icon h4 {
+            float: left;
+            margin-top: 0px;
+            padding: 5px;
+        }
+
+        nav ul li .tombol_lain:hover {
+            border-bottom: 2px solid #5075ee;
+        }
+
+        nav ul li .tombol:hover {
+            background-color: #5075ee;
+            border-bottom: 2px solid #5075ee;
+        }
+
+    
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .tombol {
+
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .footer {
+            margin: 50px auto 0 auto;
+            text-align: center;
+        }
+
+        .socialmedia {
+            color: #fff;
+            float: left;
+            margin-left: 70px;
+            margin-top: -90px;
+
+        }
+
+        .socialmedia ul li {
+            display: inline-block;
+        }
+
+        .socialmedia img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .meidapartner {
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        .meidapartner img {
+            width: 100px;
+            height: 70px;
+        }
+
+        .contact {
+            color: #fff;
+            float: right;
+            margin-right: 70px;
+            margin-top: -90px;
+
+        }
+        .content {
+            margin: 20px auto 0 auto;
+            width: 70%;
+            text-align: center;
+        }
+
+        .form-group{
+            margin: 10px;
+            padding: 5px;
+            width: 330px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 10px;
+            color: black;
+        }
+        .remember{
+            padding: 0;
+            font-size: 8pt;
+            margin: 20px 0;
+        }
+        button{
+            margin-top: 5px;
+            padding: 7px 35px;
+            background-color: #4ACEC9;
+            border-radius: 15px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .btnLogin {
+            text-decoration: none;
+            color:black;
+        }
+        
+        /* untuk ukuran layar 700px kebawah */
+@media screen and (max-width: 780px) {
+            * {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                width: 100%;
+
+            }
+
+            .header {
+                margin: auto;
+                width: 100%;
+            }
+
+            .header nav {
+                width: 30%;
+            }
+
+            .header nav ul li img {
+                margin-top: -5px;
+            }
+
+            .header nav ul li .tombol,
+            .header nav ul li .tombol_lain {
+                width: 100%;
+                text-align: center;
+            }
+
+            nav ul li .tombol_lain:hover {
+                border-bottom: 2px solid #5075ee;
+            }
+
+            nav ul li .tombol:hover {
+                background-color: #5075ee;
+                border-bottom: 2px solid #5075ee;
+            }
+            .form-group{
+            margin: 10px;
+            padding: 5px;
+            width: 200px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 10px;
+            color: black;
+        }
+
+            .socialmedia {
+                color: #fff;
+                float: none;
+                margin-left: 0px;
+                margin-top: 0px;
+
+            }
+            .contact {
+            color: #fff;
+            float: none;
+            margin-right: 0px;
+            margin-top: 0px;
+            padding-bottom: 20px;
+
+        }
+        .tulisan p {
+            font-size: 20pt;
+        }
+
+        .tulisan h1 {
+            font-size: 40pt;
+        }
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                    <div class="icon">
+                    <li>
+                        <h4><a href=""><img src="img/13.png" alt=""> Yash Academy</a></h4>
+                    </li>
+                </div>
+                <div class="tombolmaning">
+                    <li><a href="SignUp.html" class="tombol">Sign Up</a></li>
+                    <li><a href="Login.html" class="tombol">Login</a></li>
+                    <li><a href="#" class="tombol_lain"onclick="alertAction()">About Us</a></li>
+                    <li><a href="#" class="tombol_lain"onclick="alertAction()">Lessons</a></li>
+                    <li><a href="Home.html" class="tombol_lain">Home</a></li>
+                </div>
+            </ul>
+        </nav>
+    <div class="content">
+        <form class="form" action="HomeAkun.html">
+            <label for="text" style="font-size: 20pt; color: #fff;">Sign Up</label><br>
+            <input type="text" id="username" class="form-group" placeholder="Nama" required><br>
+            <input type="text" id="username" class="form-group" placeholder="Username" required><br>
+            <input type="password" id="password" class="form-group" placeholder="Password" required><br>
+            <input type="password" id="password" class="form-group" placeholder="Re-Password" required><br>
+           <button type="submit" style="margin-bottom: 15px;">Register</button>
+        </form>
+        <a href="Login.html" class="btnLogin">Back to Login</a>
+    </div>
+        
+    </div>
+
+        <div class="footer">
+            <div class="meidapartner">
+                <h5>Media Partner</h5>
+                <img src="img/1.png" alt="Kemdikbud">
+                <h6 style="font-size: 10px;"><strong>Kementrian Pendidikan dan Kebudayaan</strong></h6>
+            </div>
+            <div class="socialmedia">
+                <h5>Social Media</h5>
+                <ul>
+                    <li><img src="img/ig.png" alt="instagram"></li>
+                    <li><img src="img/fb.png" alt="facebook"></li>
+                    <li><img src="img/tw.png" alt="twitter"></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h5>Contact Us</h5>Yash_Academy.ac.id</p>
+            </div>
+        </div>
+    </div>
+    <script>
+            function alertAction() {
+              alert("Silahkan Login Atau Sign Up Terlebih Dahulu");
+            }
+    
+            </script>
+</body>
+</html>

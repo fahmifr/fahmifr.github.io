@@ -1,109 +1,352 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
-	<title>Yash Academy</title>
-	      <link rel="shortcut icon" href="img/13.png">
+    <title>Yash Academy</title>
+    <link rel="shortcut icon" href="img/13.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Fira sans, sans-serif;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .header {
+            background-image: url(img/aa.jpg);
+            background-size: cover;
+            padding-bottom: 50px;
+            /* height: 500px; */
+        }
+
+        nav {
+            margin: auto;
+            text-align: center;
+            width: 90%;
+
+
+        }
+
+        nav img {
+            width: 30px;
+            height: 30px;
+            float: left;
+        }
+
+        nav ul {
+            padding: 0 20px;
+            list-style: none;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        nav ul li {
+            float: right;
+
+        }
+
+        nav .tombolmaning {
+            float: right;
+            margin-top: 40px;
+
+        }
+
+        nav .icon {
+            margin-top: 40px;
+            float: left;
+        }
+
+        nav .icon h4 {
+            float: left;
+            margin-top: 0px;
+            padding: 5px;
+        }
+
+        nav ul li .tombol_lain:hover {
+            border-bottom: 2px solid #5075ee;
+        }
+
+        nav ul li .tombol:hover {
+            background-color: #5075ee;
+            border-bottom: 2px solid #5075ee;
+        }
+
+
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .tombol {
+
+            border-radius: 10px;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .content {
+            background-color: white;
+            background-size: contain;
+            padding-top: 10px;
+            /* height: 210px; */
+
+        }
+
+        .row .a {
+            text-align: center;
+            float: left;
+            margin-left: 100px;
+            margin-top: 50px;
+            padding-bottom: 100px;
+        }
+
+        .row .a img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .row .b {
+            text-align: center;
+            float: right;
+            margin-right: 100px;
+            margin-top: 50px;
+            padding-bottom: 100px;
+        }
+
+        .row .b img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .footer {
+            background-color: #000;
+            margin: 20px auto 0 auto;
+            text-align: center;
+            clear: both;
+            padding-bottom: 5px;
+        }
+
+        .socialmedia {
+            color: #fff;
+            float: left;
+            margin-left: 70px;
+            margin-top: -90px;
+
+        }
+
+        .socialmedia ul li {
+            display: inline-block;
+        }
+
+        .socialmedia img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .meidapartner {
+            padding-top: 20px;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+
+        .meidapartner img {
+            width: 100px;
+            height: 70px;
+        }
+
+        .contact {
+            color: #fff;
+            float: right;
+            margin-right: 70px;
+            margin-top: -90px;
+
+        }
+
+        .tulisan {
+            color: #fff;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .tulisan p {
+            font-size: 30pt;
+        }
+
+        .tulisan h1 {
+            font-size: 40pt;
+        }
+
+        .tulisan form input {
+            width: 45%;
+            height: 35px;
+            font-size: 16pt;
+            border-radius: 10px;
+        }
+
+
+        /* untuk ukuran layar 700px kebawah */
+        @media screen and (max-width: 780px) {
+            * {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                width: 100%;
+
+            }
+
+            .header {
+                margin: auto;
+                width: 100%;
+            }
+
+            .header nav {
+                width: 30%;
+            }
+
+            .header nav ul li img {
+                margin-top: -5px;
+            }
+
+            .header nav ul li .tombol,
+            .header nav ul li .tombol_lain {
+                width: 100%;
+                text-align: center;
+            }
+
+            nav ul li .tombol_lain:hover {
+                border-bottom: 2px solid #5075ee;
+            }
+
+            nav ul li .tombol:hover {
+                background-color: #5075ee;
+                border-bottom: 2px solid #5075ee;
+            }
+
+            .content {
+                padding-bottom: 20px;
+            }
+
+            .row .a {
+                float: none;
+                margin: 20px auto;
+            }
+
+            .row .b {
+                float: none;
+                margin: 20px auto;
+            }
+
+            .socialmedia {
+                color: #fff;
+                float: none;
+                margin-left: 0px;
+                margin-top: 0px;
+
+            }
+            .contact {
+            color: #fff;
+            float: none;
+            margin-right: 0px;
+            margin-top: 0px;
+            padding-bottom: 20px;
+
+        }
+        .tulisan p {
+            font-size: 20pt;
+        }
+
+        .tulisan h1 {
+            font-size: 40pt;
+        }
+
+
+        }
+    </style>
+
 </head>
-<body background="img/bg.jpg">
-<font face="Roboto" color="#3b3b3b">
-		
-	
 
-	<table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" height="100%" background="">
-		<tboody>
-			<tr>
-				<td>
-					<table width="1140px" border="0"  align="center">
-						<tbody>
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <div class="icon">
+                    <li>
+                        <h4><a href=""><img src="img/13.png" alt=""> Yash Academy</a></h4>
+                    </li>
+                </div>
+                <div class="tombolmaning">
+                    <li><a href="SignUp.html" class="tombol">Sign Up</a></li>
+                    <li><a href="Login.html" class="tombol">Login</a></li>
+                    <li><a href="#" class="tombol_lain" onclick="alertAction()">About Us</a></li>
+                    <li><a href="#" class="tombol_lain" onclick="alertAction()">Lessons</a></li>
+                    <li><a href="Home.html" class="tombol_lain">Home</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div class="tulisan">
+            <h1>Welcome To Yash academy</h1>
+            <form>
+                <input type="text" placeholder="Search">
+            </form>
+            <p>Akan memberikan pendidikan kelas dunia <br>
+                secara gratis untuk siapapun <br>
+                dimana pun
+            </p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="row">
 
-							<tr>
-								<td width="570px">
-									<a href="">
-										<img src="img/13.png" height="100px">
+            <div class="a">
+                <img src="img/13.png">
+                <h3><strong>Yash academy</strong></h3>
+                Sebuah website e-learning yang membantu siswa belajar <br>
+                dengan menyajikan soal-soal beserta pembahasannya.
+            </div>
+            <div class="b">
+                <img src="img/12.png">
+                <h3><strong>Pembelajaran pribadi</strong></h3>
+                siswa berlatih dengan temponya sendiri, Mereka mulai memahami <br>
+                hal-hal yang belum mereka mengerti.
+            </div>
+        </div>
 
-									</a>
-									<font size="30">Yash Academy
-								</td>
-								<td align="right">
-									<b><a title="Home"><font face="Roboto" color="black">Home</font></a></b> &nbsp;&nbsp;&nbsp;
-									<b><a title="Portofolio"><font face="Roboto" color="#3b3b3b">Lessons</font></a></b> &nbsp;&nbsp;&nbsp;
-									<b><a title="About Me"><font face="Roboto" color="#3b3b3b">About Us</font></a></b> &nbsp;&nbsp;&nbsp;
-									<b><a title="Login"><font face="Roboto" color="#3b3b3b">Login</font></a></b> &nbsp;&nbsp;&nbsp;
-									<b><a title="Sign Up"><font face="Roboto" color="#3b3b3b">Sign Up</font></a></b> &nbsp;&nbsp;&nbsp;
-								</td>
+    </div>
+    <div class="footer">
+        <div class="meidapartner">
+            <h5>Media Partner</h5>
+            <img src="img/1.png" alt="Kemdikbud">
+            <h6 style="font-size: 10px;"><strong>Kementrian Pendidikan dan Kebudayaan</strong></h6>
+        </div>
+        <div class="socialmedia">
+            <h5>Social Media</h5>
+            <ul>
+                <li><img src="img/ig.png" alt="instagram"></li>
+                <li><img src="img/fb.png" alt="facebook"></li>
+                <li><img src="img/tw.png" alt="twitter"></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h5>Contact Us</h5>Yash_Academy.ac.id</p>
+        </div>
+    </div>
+    <script>
+        function alertAction() {
+            alert("Silahkan Login Atau Sign Up Terlebih Dahulu");
+        }
 
-							</tr>
-							<tr>
-								<td height="30px"  colspan="2"></td>
-							</tr>
+    </script>
 
-							<tr>
-								<td colspan="2">
-								<font size="30" color="#3b3b3b"><b>Welcome to Yash Academy</font><br>
-								<p>
-								<input type="email" class="form-control form-control-lg" placeholder="search...">								
-								<br>
-								<br>
-								Akan memberikan pendidikan kelas dunia
-								<br>
-								secara gratis untuk siapapun
-								<br>
-								dimana pun.
-								</p>
-								</td>
-							</tr>
-							
-							<tr>
-								<td height="30px"  colspan="2"></td>
-							</tr>
-							
-							<tr>
-								<td colspan="2">
-								<img src="img/aa.jpg" width="100%">
-								</td>
-							</tr>
-							</tr>
-							<tr>
-								<td>
-									<img src="img/13.png" width="35px"> Yash academy<br>
-									Sebuah website e-learning yang membantu siswa belajar dengan menyajikan soal-soal beserta pembahasannya.
-								</td>
-								<td>
-									<img src="img/12.png" width="35px"> Pembelajaran Pribadi<br>
-									siswa berlatih dengan temponya sendiri, Mereka mulai memahami hal-hal yang belum mereka mengerti.
-								</td>
-							</tr>
-
-
-							<tr>
-								<td>
-									Social Media :<br>
-									<img src="img/fb.png" width="35px">
-									<img src="img/tw.png" width="35px">
-									<img src="img/ig.png" width="35px">
-								</td>
-								<td>
-									 Support by :<br>
-									<img src="img/1.png" width="90px" height="80px">
-								</td>
-								<td>
-								Email :<br>
-								Yash_academy.ac.id
-								</td>
-							</tr>
-
-
-						</tbody>
-					</table>
-				</td>
-			</tr>
-		</tboody>
-	</table>
-
-
-
-
-
-</font>
 </body>
+
 </html>
