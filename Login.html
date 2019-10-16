@@ -253,13 +253,12 @@
             </ul>
         </nav>
     <div class="content">
-        <form class="form" action="HomeAkun.html">
+        <form class="form" name="login" action="HomeAkun.html" method="POST">
             <label for="text" style="font-size: 20pt;">Login</label><br>
-            <input type="text" id="username" class="form-group" placeholder="Username" required><br>
-            <input type="password" id="password" class="form-group" placeholder="Password" required><br>
+            <input type="text" id="username" class="form-group" placeholder="Username" name="username" required><br>
+            <input type="password" id="password" class="form-group" placeholder="Password" name="password" required><br>
             <input type="checkbox" class="remember">Remember me  <br>
-            <!-- <a href="HomeAkun.html" class="button">Login</a> -->
-           <button type="submit">Login</button>
+            <button type="submit" onclick="if(document.forms['login'].checkValidity()){event.preventDefault();document.forms['login'].submit();}else{event.preventDefault();alert('Mohon periksa kembali isian');}">Login</button>
             
         </form>
     </div>
@@ -288,6 +287,20 @@
     <script>
             function alertAction() {
               alert("Silahkan Login Atau Sign Up Terlebih Dahulu");
+            }
+
+            function validate(){
+                event.preventDefault();
+                console.log('tes');
+                var uname = document.forms["login"]["username"].value;
+                var pass = document.forms["login"]["password"].value;
+                if(uname=="" || pass=""){
+                    event.preventDefault();
+                    alert('Data kosong\nmohon periksa kembali isian');
+                }
+                else{
+                    alert('Login');
+                }
             }
     
             </script>
