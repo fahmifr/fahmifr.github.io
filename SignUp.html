@@ -257,15 +257,20 @@
             </ul>
         </nav>
     <div class="content">
-        <form class="form" action="HomeAkun.html">
+        <form class="form" action="HomeAkun.html" enctype="multipart/form-data">
             <label for="text" style="font-size: 20pt; color: #fff;">Sign Up</label><br>
             <input type="text" id="username" class="form-group" placeholder="Nama" required><br>
             <input type="text" id="username" class="form-group" placeholder="Username" required><br>
             <input type="password" id="password" class="form-group" placeholder="Password" required><br>
             <input type="password" id="password" class="form-group" placeholder="Re-Password" required><br>
-           <button type="submit" style="margin-bottom: 15px;">Register</button>
-        </form>
-        <a href="Login.html" class="btnLogin">Back to Login</a>
+            
+                <input type='file' id="inputFile" />
+                <img id="image_upload_preview" src="http://placehold.it/100x100" alt="your image" style="width: 100px;" />
+                <br><button type="submit" style="margin-bottom: 15px;">Register</button>
+            </form>
+           
+       
+        <a href="Login.html" class="btnLogin" style="color:#fff;">Back to Login</a>
     </div>
         
     </div>
@@ -289,11 +294,27 @@
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
             function alertAction() {
               alert("Silahkan Login Atau Sign Up Terlebih Dahulu");
             }
-    
+            function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#image_upload_preview').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#inputFile").change(function () {
+        readURL(this);
+    });
             </script>
+            
 </body>
 </html>
